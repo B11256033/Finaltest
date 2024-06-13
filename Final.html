@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>餐廳</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">漢堡天堂</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">關於</a>
+      <a href="#menu" class="w3-bar-item w3-button">菜單</a>
+      <a href="#contact" class="w3-bar-item w3-button">聯絡我們</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="image.webp" alt="Hamburger" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="image1.webp" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">關於本店</h1><br>
+      <h5 class="w3-center">創立於1898年</h5>
+      <p class="w3-large">由英國廚師Mr.Chen集畢生所學先在英國倫敦試賣，最後進軍台灣</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">在漢堡天堂，我們致力於為您提供最美味、最獨特的漢堡體驗。我們採用最新鮮的食材和獨家秘方，精心製作每一個漢堡，讓您每一口都能感受到滿滿的幸福感。</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">我們的菜單</h1><br>
+      <h4>經典牛肉漢堡 $55</h4>
+      <p class="w3-text-grey">精選優質牛肉，搭配新鮮蔬菜和特製醬料，口感豐富，令人難忘。</p><br>
+    
+      <h4>香辣雞肉漢堡 $60</h4>
+      <p class="w3-text-grey">外酥裡嫩的雞肉，配上獨特的香辣醬，給您帶來一場味蕾的盛宴。</p><br>
+    
+      <h4>素食漢堡 $55</h4>
+      <p class="w3-text-grey">為素食愛好者特別準備的健康選擇，採用有機豆腐和新鮮蔬菜製作，美味又營養。</p><br>
+    
+      <h4>雙層芝士漢堡 $65</h4>
+      <p class="w3-text-grey">雙倍的芝士和牛肉，讓您享受雙倍的滿足感。</p><br>
+    
+      <h4>飲料(紅茶/可樂/雪碧) 一杯$25</h4>
+      <p class="w3-text-grey">單吃漢堡嘴會很乾，搭配我們的飲料絕對解渴。</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="image2.webp" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>聯絡我們</h1><br>
+    <p>我們提供全方位的餐飲服務。我們理解您的需求，並將根據您的要求提供美味與美觀兼備的食物。請不要猶豫，隨時與我們聯繫。</p>
+    <p class="w3-text-blue-grey w3-large"><b>地址：台北市大安區XX路XX號</b></p>
+    <p>您可以打我們的電話：02-1234-5678 或您可以在此給我們發訊息:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="名字" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="用餐人數" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="預計用餐時間" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="訊息 \ 特殊要求" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">送出</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
